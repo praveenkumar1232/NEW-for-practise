@@ -1,0 +1,6 @@
+---
+- hosts: web
+  tasks:
+  - name: installing apache
+     package: 
+      name: apache2
