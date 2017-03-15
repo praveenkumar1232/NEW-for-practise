@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+  - name: installing insatance and apache 
+    ec2:
+     key_name: 101016
+     instance_type: t2.micro
+     image: ami-d732f0b7
+     group_id: sg-dc43efa5
+     region: us-west-2
